@@ -15,7 +15,7 @@
 #### Clone este repositório
 
 ```
-git@github.com:renatosuzuki/caixa-eletronico-cs.git
+git@github.com:renatosuzuki/caixa-eletronico-cs-array.git
 ```
 
 #### Abra o terminal na pasta local e digite:
