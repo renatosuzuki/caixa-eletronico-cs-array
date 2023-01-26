@@ -3,7 +3,7 @@
 namespace TransData.TesteTecnico.CaixaEletronico {
     class Execucao {
         public static void Main(string[] args){
-            FuncaoSaque.QuantidadeNotas();
+            FuncoesSaque.QuantidadeNotas();
         }
     }
 }

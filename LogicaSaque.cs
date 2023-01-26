@@ -1,15 +1,15 @@
 using static System.Console;
 
 namespace TransData.TesteTecnico.Saque {
-   class FuncaoSaque {
-        static List<int> LogicaSaque() {
+   class FuncoesSaque {
+        static List<int> LogicaPrincipalSaque() {
             int valorSaque = -1;
 
             string valorInput;
 
             int[] notas = new int[6] {100, 50, 20, 10, 5, 2};
 
-            List<int> quantidade = new List<int>();
+            List<int> QuantidadeNotas = new List<int>();
 
             while (valorSaque < 0) {
                 WriteLine("Digite o valor do saque: ");
@@ -31,27 +31,27 @@ namespace TransData.TesteTecnico.Saque {
                             valorSaque = valorSaque + 1;
                         };
 
-                        quantidade.Add(qtdNotas);
+                        QuantidadeNotas.Add(qtdNotas);
                     }
                 }
             };
-            return quantidade;
+            return QuantidadeNotas;
         }
 
         public static void QuantidadeNotas() {
-            List<int> quantidade = LogicaSaque();
+            List<int> QuantidadeNotas = LogicaPrincipalSaque();
 
             int[] notas = new int[6] {100, 50, 20, 10, 5, 2};
 
-            for (int i = 0; i < quantidade.Count; i++) {
-                if (quantidade[i] == 0) {
+            for (int i = 0; i < QuantidadeNotas.Count; i++) {
+                if (QuantidadeNotas[i] == 0) {
                     WriteLine();
                 }
-                else if (quantidade[i] == 1) {
-                    WriteLine($"{quantidade[i]} nota de R$ {notas[i]},00");
+                else if (QuantidadeNotas[i] == 1) {
+                    WriteLine($"{QuantidadeNotas[i]} nota de R$ {notas[i]},00");
                 }
                 else {
-                    WriteLine($"{quantidade[i]} notas de R$ {notas[i]},00");
+                    WriteLine($"{QuantidadeNotas[i]} notas de R$ {notas[i]},00");
                 }
             }
         }
