@@ -40,7 +40,7 @@ namespace TransData.TesteTecnico.Saque {
 
         public static void QuantidadeNotas() {
             List<int> quantidade = LogicaSaque();
-            
+
             int[] notas = new int[6] {100, 50, 20, 10, 5, 2};
 
             for (int i = 0; i < quantidade.Count; i++) {
@@ -48,10 +48,10 @@ namespace TransData.TesteTecnico.Saque {
                     WriteLine();
                 }
                 else if (quantidade[i] == 1) {
-                    WriteLine($"{quantidade[i]} nota de R$ {notas[i],00}");
+                    WriteLine($"{quantidade[i]} nota de R$ {notas[i]},00");
                 }
                 else {
-                    WriteLine($"{quantidade[i]} notas de R$ {notas[i],00}");
+                    WriteLine($"{quantidade[i]} notas de R$ {notas[i]},00");
                 }
             }
         }
